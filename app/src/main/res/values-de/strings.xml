@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CalorieCalcApp</string>
+    <string name="meal_list_title">Mahlzeitenliste</string>
+    <string name="meal_name_label">Mahlzeit Name</string>
+    <string name="calories_label">Kalorien</string>
+    <string name="add_meal_button">Speichern</string>
+    <string name="cancel_button">Zurück</string>
+    <string name="delete_button">Löschen</string>
+    <string name="no_meals">Keine Mahlzeiten. Füge die erste hinzu!</string>
+    <string name="adding_meal_toast">Neue Mahlzeit wird hinzugefügt</string>
+    <string name="meal_saved_toast">Mahlzeit gespeichert</string>
+    <string name="invalid_data_toast">Gib gültige Daten ein</string>
+    <string name="total_calories">Gesamtkalorien: %1$d kcal</string>
+    <string name="calories_summary">Kalorien: %1$d / %2$d kcal</string>
+    <string name="settings_title">Kalorien-Einstellungen</string>
+    <string name="current_limit">Aktuelles Limit:</string>
+    <string name="weight_label">Gewicht (kg)</string>
+    <string name="height_label">Größe (cm)</string>
+    <string name="age_label">Alter</string>
+    <string name="male_label">Männlich</string>
+    <string name="female_label">Weiblich</string>
+    <string name="calculate_limit_button">Limit berechnen</string>
+    <string name="limit_calculated">Limit berechnet</string>
+    <string name="invalid_data">Ungültige Daten</string>
+    <string name="invalid_weight">Ungültiges Gewicht</string>
+    <string name="invalid_height">Ungültige Größe</string>
+    <string name="invalid_age">Ungültiges Alter</string>
+</resources>

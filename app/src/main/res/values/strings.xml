@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CalorieCalcApp</string>
+    <string name="meal_list_title">Lista posiłków</string>
+    <string name="meal_name_label">Nazwa posiłku</string>
+    <string name="calories_label">Kalorie</string>
+    <string name="add_meal_button">Zapisz</string>
+    <string name="cancel_button">Cofnij</string>
+    <string name="delete_button">Usuń</string>
+    <string name="no_meals">Brak posiłków. Dodaj pierwszy!</string>
+    <string name="adding_meal_toast">Dodawanie nowego posiłku</string>
+    <string name="meal_saved_toast">Posiłek zapisany</string>
+    <string name="invalid_data_toast">Wprowadź poprawne dane</string>
+    <string name="total_calories">Łącznie kalorii: %1$d kcal</string>
+    <string name="calories_summary">Kalorie: %1$d / %2$d kcal</string>
+    <string name="settings_title">Ustawienia kalorii</string>
+    <string name="current_limit">Aktualny limit:</string>
+    <string name="weight_label">Waga (kg)</string>
+    <string name="height_label">Wzrost (cm)</string>
+    <string name="age_label">Wiek</string>
+    <string name="male_label">Mężczyzna</string>
+    <string name="female_label">Kobieta</string>
+    <string name="calculate_limit_button">Oblicz limit</string>
+    <string name="limit_calculated">Limit obliczony</string>
+    <string name="invalid_data">Błędne dane</string>
+    <string name="invalid_weight">Niepoprawna waga</string>
+    <string name="invalid_height">Niepoprawny wzrost</string>
+    <string name="invalid_age">Niepoprawny wiek</string>
+</resources>
+

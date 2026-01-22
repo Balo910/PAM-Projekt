@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CalorieCalcApp</string>
+    <string name="meal_list_title">Meal List</string>
+    <string name="meal_name_label">Meal Name</string>
+    <string name="calories_label">Calories</string>
+    <string name="add_meal_button">Save</string>
+    <string name="cancel_button">Back</string>
+    <string name="delete_button">Delete</string>
+    <string name="no_meals">No meals. Add your first one!</string>
+    <string name="adding_meal_toast">Adding new meal</string>
+    <string name="meal_saved_toast">Meal saved</string>
+    <string name="invalid_data_toast">Enter valid data</string>
+    <string name="total_calories">Total calories: %1$d kcal</string>
+    <string name="calories_summary">Calories: %1$d / %2$d kcal</string>
+    <string name="settings_title">Calorie Settings</string>
+    <string name="current_limit">Current limit:</string>
+    <string name="weight_label">Weight (kg)</string>
+    <string name="height_label">Height (cm)</string>
+    <string name="age_label">Age</string>
+    <string name="male_label">Male</string>
+    <string name="female_label">Female</string>
+    <string name="calculate_limit_button">Calculate Limit</string>
+    <string name="limit_calculated">Limit calculated</string>
+    <string name="invalid_data">Invalid data</string>
+    <string name="invalid_weight">Invalid weight</string>
+    <string name="invalid_height">Invalid height</string>
+    <string name="invalid_age">Invalid age</string>
+</resources>
