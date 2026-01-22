@@ -29,15 +29,11 @@ fun MealListScreen(
     val meals by viewModel.meals.collectAsState()
     val totalCalories by viewModel.totalCalories.collectAsState()
     val dailyLimit by viewModel.dailyLimit.collectAsState()
-    val titleText = stringResource(R.string.meal_list_title)
-    val addingMealToast = stringResource(R.string.adding_meal_toast)
-    val noMealsText = stringResource(R.string.no_meals)
-    val deleteButtonText = stringResource(R.string.delete_button)
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(titleText) },
+                title = { Text(stringResource(R.string.meal_list_title)) },
                 actions = {
                     IconButton(onClick = onSettingsClick) {
                         Icon(Icons.Default.Settings, contentDescription = null)
@@ -48,7 +44,7 @@ fun MealListScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-                    Toast.makeText(context, addingMealToast, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, context.getString(R.string.adding_meal_toast), Toast.LENGTH_SHORT).show()
                     onAddMealClick()
                 },
                 containerColor = Red1
@@ -57,7 +53,6 @@ fun MealListScreen(
             }
         }
     ) { paddingValues ->
-
         Column(
             modifier = Modifier
                 .padding(paddingValues)
@@ -71,34 +66,30 @@ fun MealListScreen(
                 color = MaterialTheme.colorScheme.onBackground
             )
 
-
             Text(
-                text = "Liczba posiłków: ${meals.size}",
+                text = stringResource(R.string.meal_count, meals.size),
                 modifier = Modifier.padding(bottom = 8.dp),
                 color = MaterialTheme.colorScheme.onBackground
             )
 
             val progress = (totalCalories.toFloat() / dailyLimit).coerceIn(0f, 1f)
-            val progressColor = if (progress >= 1f) Color.Green else Color(0xFFBCBCBC)
+            val progressColor = if (progress >= 1f) Color.Red else Color(0xFF4CAF50)
 
             LinearProgressIndicator(
-                progress = progress,
+                progress = { progress },
                 color = progressColor,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = 16.dp)
+                trackColor = Color.DarkGray,
+                modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)
             )
 
             if (meals.isEmpty()) {
                 Text(
-                    text = noMealsText,
+                    text = stringResource(R.string.no_meals),
                     style = MaterialTheme.typography.bodyLarge,
                     color = MaterialTheme.colorScheme.onBackground
                 )
             } else {
-                LazyColumn(
-                    verticalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
+                LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     items(meals) { meal ->
                         Row(
                             modifier = Modifier.fillMaxWidth(),
@@ -109,14 +100,13 @@ fun MealListScreen(
                                 Text(meal.name, color = MaterialTheme.colorScheme.onBackground)
                                 Text("${meal.calories} kcal", color = MaterialTheme.colorScheme.onBackground)
                             }
-
                             Button(
                                 onClick = { viewModel.deleteMeal(meal) },
                                 colors = ButtonDefaults.buttonColors(
                                     containerColor = MaterialTheme.colorScheme.primary
                                 )
                             ) {
-                                Text(deleteButtonText, color = MaterialTheme.colorScheme.onPrimary)
+                                Text(stringResource(R.string.delete_button))
                             }
                         }
                     }

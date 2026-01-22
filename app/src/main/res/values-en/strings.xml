@@ -11,6 +11,7 @@
     <string name="adding_meal_toast">Adding new meal</string>
     <string name="meal_saved_toast">Meal saved</string>
     <string name="invalid_data_toast">Enter valid data</string>
+    <string name="meal_count">Number of meals: %1$d</string>
     <string name="total_calories">Total calories: %1$d kcal</string>
     <string name="calories_summary">Calories: %1$d / %2$d kcal</string>
     <string name="settings_title">Calorie Settings</string>

@@ -11,6 +11,7 @@
     <string name="adding_meal_toast">Neue Mahlzeit wird hinzugefügt</string>
     <string name="meal_saved_toast">Mahlzeit gespeichert</string>
     <string name="invalid_data_toast">Gib gültige Daten ein</string>
+    <string name="meal_count">Anzahl der Mahlzeiten: %1$d</string>
     <string name="total_calories">Gesamtkalorien: %1$d kcal</string>
     <string name="calories_summary">Kalorien: %1$d / %2$d kcal</string>
     <string name="settings_title">Kalorien-Einstellungen</string>
